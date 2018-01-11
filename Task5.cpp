@@ -26,8 +26,8 @@ void main() {
 		cout << ourArr[i] << " ";
 	}
 	int sum = 0;
-	for (int i = 0; i < SIZE; i++)
-		if (ourArr[i] >= 0) sum += ourArr[i];		
-	cout << endl << "Сумма неотрицательных элементов массива: " << sum << endl;	
+	for (int i = SIZE-1; ourArr[i]>=0; i--)
+		sum += ourArr[i];
+	cout << endl << "Сумма неотрицательных элементов массива: " << sum << endl;
 	system("pause");
 }
